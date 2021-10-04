@@ -55,8 +55,14 @@ body
     display: block;
 }
 
+.active-mob
+{
+    display: block;
+}
+
 .active
 {
+    display: block;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -82,7 +88,7 @@ nav
 
 .nav-list li
 {
-    padding: 0px 30px;
+    padding: 10px 30px 0px ;
 }
 
 .nav-list li a
@@ -247,9 +253,21 @@ nav
         text-align: center;
     }
 
-    .desativado
+    .desativado,
+    .desativado-2,
+    .desativado-3,
+    .desativado-4,
+    .desativado-5,
+    .desativado-6
     {
         display: none;
+    }
+
+    
+
+    .active
+    {
+        display: flex;
     }
 
     .container-experiences-icon ion-icon
@@ -304,6 +322,20 @@ nav
     {
         font-size: 5em;
         margin: 150px 160px; 
+    }
+
+    .active-mob
+    {
+        display: block;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .active-mob a
+    {
+        font-size: 10px;
     }
 
 

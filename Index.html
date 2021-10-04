@@ -25,13 +25,13 @@
         <header>
             <nav>
                 <ul class="nav-list">
-                    <li class="desativado"><a href="/">Home</a></li>
-                    <li class="desativado"><a href="/">services</a></li>
-                    <li class="desativado"><a href="/">portfolio</a></li>
-                    <li ><span id="logo" class="active">T</span></li>
-                    <li class="desativado"><a href="/">About us</a></li>
-                    <li class="desativado"><a href="/">Journal</a></li>
-                    <li class="desativado"><a href="/">Contact</a></li>
+                    <li id="Menu-1" class="desativado"><a href="/">Home</a></li>
+                    <li id="Menu-2"class="desativado-2"><a href="/">services</a></li>
+                    <li id="Menu-3" class="desativado-3"><a href="/">portfolio</a></li>
+                    <li ><span id="logo" class="active" onclick="remove_menu()">T</span></li>
+                    <li id="Menu-4" class="desativado-4"><a href="/">About us</a></li>
+                    <li id="Menu-5" class="desativado-5"><a href="/">Journal</a></li>
+                    <li id="Menu-6" class="desativado-6"><a href="/">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -105,9 +105,23 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script src="https://unpkg.com/feather-icons"></script>
+
     <script>
-        feather.replace()
-      </script>
+        
+
+        function remove_menu()
+        {
+                document.getElementById('Menu-1').classList.add("active-mob");
+                document.getElementById('Menu-2').classList.add("active-mob");
+                document.getElementById('Menu-3').classList.add("active-mob");
+                document.getElementById('Menu-4').classList.add("active-mob");
+                document.getElementById('Menu-5').classList.add("active-mob");
+                document.getElementById('Menu-6').classList.add("active-mob");
+
+
+                document.getElementById('desativado').classList.remove('desativado');
+            
+        }
+    </script>
 </body>
 </html>
