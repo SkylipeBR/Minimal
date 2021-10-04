@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container-principal
+{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.6)), url('../Img/stas-aki-ZH6xWF_hnko-unsplash.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-principal-text
+{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+#container-principal-text h1
+{
+    font-size: 4em;
+}
+
+#container-segundario header
+{
+    border-bottom: 0.5px solid #555;
+}
+
+#logo
+{
+
+    font-size: 30px;
+    padding: 10px 20px;
+    border: 3px solid #000;
+    margin-top: -10px;
+}
+
+.desativado
+{
+    display: block;
+}
+
+.active
+{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.active:hover
+{
+    background: #000;
+    color: #fff;
+}
+
+nav 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li
+{
+    padding: 0px 30px;
+}
+
+.nav-list li a
+{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.container-topicos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+}
+
+#container-topicos-text
+{
+    width: 50%;
+}
+
+#container-topicos-text h1
+{
+    padding: 10px;
+}
+
+#container-topicos-text ion-icon
+{
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+#topicos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.topicos-geral
+{
+    padding: 50px 70px;
+}
+
+.topicos-geral ion-icon
+{
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: #373737;
+    transition: 0.6s;
+}
+
+.topicos-geral ion-icon:hover
+{
+    color: #000;
+}
+
+.topicos-geral span
+{
+    font-size: 1.2em;
+    text-transform: uppercase;
+
+}
+.topicos-geral hr
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.experiences
+{
+    display: flex;
+    background: #17161A;
+    height: 90vh;
+    color: #fff;
+}
+
+
+.experiences .container-experiences
+{
+    display: flex;
+    justify-content: space-around   ;
+    align-items: center;
+}
+
+.container-experiences-text
+{
+    width: 30%;
+}
+
+.container-experiences-text h1
+{
+    font-size: 3em;
+}
+
+.container-experiences-text p
+{
+    padding: 10px 0px;
+    color: #555;
+}
+
+.container-experiences-icon ion-icon
+{
+    font-size: 5em;
+    margin: 20px;
+}
+
+
+
+#btn-experiences
+{
+    position: relative;
+    top: 20px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #17161A;
+    border-radius: 30px;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.container-filosofo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+}
+
+
+.barra-scroll li
+{
+    display: block;
+}
+
+@media (max-width: 900px)
+{
+    #container-topicos-text
+    {
+        width: 50%;
+    }
+
+    #container-topicos-text h1
+    {
+      margin-top: 70px;
+    }
+
+
+    #topicos
+    {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desativado
+    {
+        display: none;
+    }
+
+    .container-experiences-icon ion-icon
+    {
+        position: relative;
+        left: -30px;
+    }
+
+    .experiences
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #17161A;
+        height: 90vh;
+        color: #fff;
+    }
+
+    .experiences .container-experiences
+    {
+        display: flex;
+        justify-content: space-around   ;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-experiences-text
+    {
+        width: 50%;
+    }
+
+    .container-experiences-text h1
+    {
+        font-size: 3em;
+    }
+
+    .container-experiences-text p
+    {
+        padding: 10px 0px;
+        color: #555;
+    }
+
+    .container-experiences-icon
+    {
+        display: none;
+        position: absolute;
+        left: auto;
+        right: auto;
+    }
+
+    .container-experiences-icon ion-icon
+    {
+        font-size: 5em;
+        margin: 150px 160px; 
+    }
+
+
+
+}
